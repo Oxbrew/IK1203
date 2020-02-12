@@ -1,4 +1,4 @@
-package tcpclient;
+<package tcpclient;
 import java.net.*;
 import java.io.*;
 
@@ -23,7 +23,6 @@ public class TCPClient {
 		int serverBufferLength = socket.getInputStream().read(serverBuffer);
 
 		String string = new String(serverBuffer, 0, serverBufferLength);
-		System.out.print('\n');
 
 		socket.close();
 
@@ -39,7 +38,6 @@ public class TCPClient {
 
 		int serverBufferLength = socket.getInputStream().read(serverBuffer);
 		String string = new String(serverBuffer, 0, serverBufferLength);
-		System.out.print('\n');
 
 		socket.close();
 
