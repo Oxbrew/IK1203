@@ -1,4 +1,4 @@
-<package tcpclient;
+package tcpclient;
 import java.net.*;
 import java.io.*;
 
