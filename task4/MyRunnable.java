@@ -35,10 +35,6 @@ public class MyRunnable implements Runnable {
 			else if (info[i].equals("string")){string = info[++i];}
 		}
 
-		System.out.println(hostName);
-		System.out.println(port);
-		System.out.println(string);
-
 		try {
 			if (port != null && hostName != null) {
 				String serverRes = TCPClient.askServer(hostName, Integer.parseInt(port), string);

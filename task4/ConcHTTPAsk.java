@@ -6,15 +6,12 @@ public class ConcHTTPAsk {
 
 		try {
 
-
 			ServerSocket welcomeSocket = new ServerSocket(Integer.parseInt(args[0]));
 
 			while(true){
 				Socket connectionSocket = welcomeSocket.accept();
 				new Thread(new MyRunnable(connectionSocket)).start();
 			}
-		}	catch(IOException c) {
-				System.out.println("error");
-		}
+		} catch(IOException c) {System.out.println("error");}
 	}
 }
